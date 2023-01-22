@@ -12,11 +12,10 @@ const SearchBar = () => {
   
       if (searchTerm) {
         navigate(`/search/${searchTerm}`);
-  
         setSearchTerm('');
       }
     };
-
+  // check 
   return (
    <Paper
       component='form'
