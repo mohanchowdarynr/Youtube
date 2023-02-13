@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Paper, IconButton } from '@mui/material';
+import { Paper, IconButton, Input } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 const SearchBar = () => {
@@ -28,12 +28,7 @@ const SearchBar = () => {
         mr: { sm: 5 },
       }}
     >
-      <input
-        className='search-bar'
-        placeholder='Search...'
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+      <Input  value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder='Search' disableUnderline='true'/>
       <IconButton type='submit' sx={{ p: '10px', color: 'red' }} aria-label='search'>
         <SearchIcon />
       </IconButton>

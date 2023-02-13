@@ -19,6 +19,9 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         style={{
           background: category.name === selectedCategory && "#FC1503",
           color: "black",
+          display:'flex',
+          alignItems:'center',
+          padding:4
         }}
         key={category.name}
       >
